@@ -31,17 +31,19 @@
 /* Logo */
 .logo {
 	float: left;
-	width: 20%;
-	background-color: #1da4dd;
+	width: 30%;
+	background-color: black !important;
 }
 .logo img {
 	float: left;
 	margin-left: 20px;
-	width:225px;
+	width:100%;
 }
 .menu_main {
 	float: right;
-	width: 80%;
+	width: 70%;
+	height: 70px !important;
+	background-color: black !important;
 }
 
 /*------------------*/
