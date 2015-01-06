@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
@@ -22,6 +22,12 @@
    	<link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
@@ -167,7 +173,76 @@
                     data-ease="easeOutExpo"
                     data-effect="bottom(40)"
                     >
-                    <a href="#contact" class="sbutton1 trialBut">Start Free Trial</a>
+                    <!--<a href="#contact" class="sbutton1 trialBut">Start Free Trial</a>-->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#freeTrial">
+  Start Free Trial
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="freeTrial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Start Your Free Trial Today!</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form action="demo-contacts.php" method="post" id="sky-form" class="sky-form">
+          <fieldset>
+            <div class="row">
+              <div class="col col-6">
+                <label class="label">Name</label>
+                <label class="input"> <i class="icon-append icon-user"></i>
+                  <input type="text" name="name" id="name">
+                </label>
+              </div>
+              <div class="col col-6">
+                <label class="label">E-mail</label>
+                <label class="input"> <i class="icon-append icon-envelope-alt"></i>
+                  <input type="email" name="email" id="email">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col col-6">
+              <label class="label">Subject</label>
+              <label class="input"> <i class="icon-append icon-tag"></i>
+                <input type="text" name="subject" id="subject">
+              </label>
+            </div>
+              <div class="col col-6">
+                <label class="label">Phone Number</label>
+                <label class="input"> <i class="icon-append icon-phone-alt"></i>
+                  <input type="phone" name="phone" id="phones">
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="label">Message</label>
+              <label class="textarea"> <i class="icon-append icon-comment"></i>
+                <textarea rows="10" name="message" id="message" placeholder="Interested in a Free Trial?  Please include your phone number and sub domain you would like the LMS set up under."></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <footer>
+            <button type="submit" class="button">Send message</button>
+          </footer>
+          <div class="message"> <i class="icon-ok"></i>
+            <p>Your message was successfully sent!</p>
+          </div>
+        </form>
+  <!-- end of ContactUsForm -->
+      </div> <!-- end of modal body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                 </div>
         
        			<img src="js/masterslider/blank.gif" data-src="images/mainPic2.jpg" alt=""/>    
@@ -597,15 +672,15 @@
 	<div class="slider nosidearrows">
         <div class="flexslider carousel">
           <ul class="slides">
-                <li>
-                    <div class="peosec"><img src="images/178fdda.jpg" alt="" /> <strong>- Art Serna, former Director of Training <i> &nbsp;&nbsp; Texas Charter School Association</i></strong></div>
-                    <p>The team at Nuvola was instrumental to helping TCSA bring their vision for e-learning services into reality. They were a true thought partner in the process and extremely flexible to adapt to the needs of our clients as feedback was received. Rick was a joy to work with and very much accessible to me and our team when needed.</p>
-                </li><!-- end section -->
     
                 <li>
                     <div class="peosec"><img src="images/HeadAndShoulders1.jpg" alt="" /> <strong>- Jon Schober <i> &nbsp;&nbsp; <a href="http://maximizeothers.com">maximizeothers.com</a></i></strong></div>
                     <p>Nuvola has been great to work with and has been super flexible in building the exact solution that we need.  They sat down with us multiple times to make sure we were happy with their product and that it met OUR needs.  The LMS is incredibily simple to set up and modify for our users and has great reporting capability.  Their low cost structure has made it easy for us to quickly launch the training we need.</p>
 				</li><!-- end section -->
+               <li>
+                    <div class="peosec"><img src="images/178fdda.jpg" alt="" /> <strong>- Art Serna, former Director of Training <i> &nbsp;&nbsp; Texas Charter School Association</i></strong></div>
+                    <p>The team at Nuvola was instrumental to helping TCSA bring their vision for e-learning services into reality. They were a true thought partner in the process and extremely flexible to adapt to the needs of our clients as feedback was received. Rick was a joy to work with and very much accessible to me and our team when needed.</p>
+                </li><!-- end section -->
          
 
                 <!--
@@ -718,7 +793,7 @@
     
     	<ul>
         	
-            <li class="title"><h4>Platinum</h4> <h2>$1229<em> /month</em></h2></li>
+            <li class="title"><h4>Platinum</h4> <h2>$129<em> /month</em></h2></li>
             <li><strong>2000</strong> Active Users</li>
             <li><strong>1 Custom</strong> Domain Name</li>
             <li><strong>Unlimited</strong> Course Uploads</li>
