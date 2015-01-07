@@ -14,4 +14,6 @@ if( isset($_POST['name']) )
 		mail($_POST['email'], $subject, $message, $headers);
 	}
 }
+echo "<h2>Message Sent Successfully!</h2>";
+echo "<a href='http://www.nuvola-networks.com'>Back</a>";
 ?>

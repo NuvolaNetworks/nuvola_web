@@ -1231,6 +1231,7 @@
 			// Ajax form submition					
 			submitHandler: function(form)
 			{
+                event.preventDefault()
 				$(form).ajaxSubmit(
 				{
 					success: function()
